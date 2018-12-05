@@ -1,0 +1,9 @@
+*.DS_Store
+*.settings
+*.project
+*build/
+*lib/
+superpointservice/.classpath
+superpointservice/.project
+*.idea
+*.iml
