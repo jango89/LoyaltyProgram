@@ -1,6 +1,0 @@
-com/trivago/data/DataTrackerApplication.class
-com/trivago/data/gateway/CatalogueConsumer.class
-com/trivago/data/repository/EventDataRepository.class
-com/trivago/data/gateway/LoyaltyProgramEventConsumer.class
-com/trivago/data/domain/EventData.class
-com/trivago/data/gateway/AuthEventConsumer.class
