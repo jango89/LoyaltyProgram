@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: data-tracker
+  data:
+    mongodb:
+      port: 27017
+      host: mongo-db
+      database: event
+  rabbitmq:
+    addresses: rabbitmq-queue
+    username: guest
+    password: guest
+    virtual-host: /
+server:
+  port: 8084

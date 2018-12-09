@@ -1,0 +1,6 @@
+/Users/rohith.kunnath/Documents/loyalty_program/data-tracker/src/main/java/com/trivago/data/DataTrackerApplication.java
+/Users/rohith.kunnath/Documents/loyalty_program/data-tracker/src/main/java/com/trivago/data/domain/EventData.java
+/Users/rohith.kunnath/Documents/loyalty_program/data-tracker/src/main/java/com/trivago/data/gateway/LoyaltyProgramEventConsumer.java
+/Users/rohith.kunnath/Documents/loyalty_program/data-tracker/src/main/java/com/trivago/data/repository/EventDataRepository.java
+/Users/rohith.kunnath/Documents/loyalty_program/data-tracker/src/main/java/com/trivago/data/gateway/CatalogueConsumer.java
+/Users/rohith.kunnath/Documents/loyalty_program/data-tracker/src/main/java/com/trivago/data/gateway/AuthEventConsumer.java

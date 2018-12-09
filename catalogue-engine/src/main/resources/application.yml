@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: catalogue-engine
+  data:
+    mongodb:
+      port: 27017
+      database: catalogue
+      host: mongo-db
+server:
+  port: 8082
+
+auth-engine:
+  apiKey: API_KEY_PRIVATE
+  url: http://localhost:8081

@@ -1,0 +1,26 @@
+spring:
+  application:
+    name : loyalty-program-engine
+  data:
+    mongodb:
+      port: 27017
+      database: loyalty-program
+      host: mongo-db
+
+server:
+  port: 8083
+  error:
+    whitelabel:
+      enabled: true
+
+auth-engine:
+  apiKey: API_KEY_PRIVATE
+  url: http://localhost:8081
+
+catalogue-engine:
+  apiKey: API_KEY_PRIVATE
+  url: http://localhost:8082
+
+logging:
+  level:
+    root: INFO

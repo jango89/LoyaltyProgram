@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.trivago.loyalty.program.gateway.CatalogueInterfaceTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.123 s - in com.trivago.loyalty.program.gateway.CatalogueInterfaceTest

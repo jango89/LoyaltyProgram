@@ -1,0 +1,5 @@
+com/trivago/loyalty/program/gateway/ClientInterfaceTest.class
+com/trivago/loyalty/program/gateway/CatalogueInterfaceTest.class
+com/trivago/loyalty/program/usecase/ReserveWithPointsTest.class
+com/trivago/loyalty/program/gateway/EventPublisherTest.class
+com/trivago/loyalty/program/domain/PointsTest.class

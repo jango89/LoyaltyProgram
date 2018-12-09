@@ -1,0 +1,71 @@
+version: '3'
+
+services:
+  mongo:
+    image: mongo:2.7
+    container_name: mongo-db
+    hostname: mongo-db
+    ports:
+      - "27017:27017"
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq-queue
+    hostname: rabbitmq-queue
+    ports:
+      - 15672:15672
+      - 5672:5672
+      - 15673:15673
+      - 5673:5673
+
+  auth-engine:
+    build: .
+    depends_on:
+      - rabbitmq
+      - mongo
+    links:
+      - rabbitmq
+      - mongo
+    ports:
+      - "8081:8081"
+    command: java -jar auth-engine/target/auth-engine-0.1.0-SNAPSHOT.jar
+    tty: true
+
+  catalogue-engine:
+    build: .
+    depends_on:
+      - mongo
+      - rabbitmq
+    links:
+      - mongo
+      - rabbitmq
+    ports:
+      - "8082:8082"
+    command: java -jar catalogue-engine/target/catalogue-engine-0.1.0-SNAPSHOT.jar
+    tty: true
+
+  loyalty-engine:
+    build: .
+    depends_on:
+      - mongo
+      - rabbitmq
+    links:
+      - mongo
+      - rabbitmq
+    ports:
+      - "8083:8083"
+    command: java -jar loyalty-engine/target/loyalty-engine-0.1.0-SNAPSHOT.jar
+    tty: true
+
+  data-tracker:
+    build: .
+    depends_on:
+      - mongo
+      - rabbitmq
+    links:
+      - mongo
+      - rabbitmq
+    ports:
+      - "8084:8084"
+    command: java -jar data-tracker/target/data-tracker-0.1.0-SNAPSHOT.jar
+    tty: true

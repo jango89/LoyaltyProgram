@@ -23,6 +23,7 @@ public class InitStartup {
 
   @PostConstruct
   public void init() throws IOException {
+    clientRepository.deleteById("5c0bfb3082adcb8b872fe7b9");
     Client client = new Client();
     client.setId("5c0bfb3082adcb8b872fe7b9");
     client.setTotalPoints(1200L);
